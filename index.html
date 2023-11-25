@@ -181,16 +181,16 @@
     <section class="contact" id="Contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form onsubmit="emailSend(); reset(); return false;">
+       <form action="#">
             <div class="input-box">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="name" placeholder="Full Name" class="item" autocomplete="off">
+                <input type="email" id="email" placeholder="Email Address" class="item" autocomplete="off">
             </div>
             <div class="input-box">
-                <input type="number" id="phone" placeholder="WhatsApp" required>
-                <input type="text" id="subject" placeholder="Email Subject" required>
+                <input type="number" id="phone" placeholder="WhatsApp" class="item" autocomplete="off">
+                <input type="text" id="subject" placeholder="Email Subject" class="item" autocomplete="off">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -215,10 +215,13 @@
     <!-- Typed JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <!-- SMTP EMAIL SEND -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Javascript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
