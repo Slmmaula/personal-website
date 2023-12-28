@@ -53,6 +53,10 @@ section {
     cursor: default;
 }
 
+span {
+    color: var(--text-color);
+}
+
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
@@ -103,8 +107,8 @@ section {
     margin-bottom: 1rem;
 }
 
-span {
-    color: var(--text-color);
+h3 span {
+    color: var(--main-color);
 }
 
 .home-content h1 {
